@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <defs>
+    <linearGradient id="fav-hex-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="fav-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="9" fill="#0b0f19" />
+  <!-- Hexagon Shield Frame -->
+  <polygon points="20,4 35,12 35,28 20,36 5,28 5,12" fill="url(#fav-hex-grad)" fill-opacity="0.25" stroke="url(#fav-stroke)" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Letter D -->
+  <path d="M12 13V27M12 13H17.5C20.5 13 22 14.8 22 17.5C22 20.2 20.5 22 17.5 22H12" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Letter N with Uptime Line -->
+  <path d="M22 27V19L29 27V13" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- HA Pulse Indicator Dot -->
+  <circle cx="20" cy="4" r="2.2" fill="#10b981" />
+</svg>

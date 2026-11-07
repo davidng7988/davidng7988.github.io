@@ -104,22 +104,45 @@
     }
     .logo {
       font-weight: 700;
-      font-size: 1.15rem;
-      letter-spacing: -0.02em;
       color: var(--text);
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 12px;
+      user-select: none;
     }
-    .logo-badge {
-      background: linear-gradient(135deg, var(--primary), var(--accent-purple));
-      color: white;
-      font-size: 0.72rem;
-      padding: 2px 8px;
-      border-radius: 6px;
+    .logo-icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .logo:hover .logo-icon-wrapper {
+      transform: scale(1.08) rotate(4deg);
+    }
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+    .logo-title {
       font-family: var(--font-mono);
-      font-weight: 600;
+      font-weight: 800;
+      font-size: 1.12rem;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .logo-accent {
+      color: var(--primary);
+      margin: 0 2px;
+    }
+    .logo-sub {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
     }
     .nav-right {
       display: flex;
@@ -606,9 +629,33 @@
   <!-- Navigation -->
   <header>
     <div class="container nav-inner">
-      <a href="#" class="logo">
-        David Ng
-        <span class="logo-badge">SRE</span>
+      <a href="#" class="logo" aria-label="DN // SRE Systems">
+        <div class="logo-icon-wrapper">
+          <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logo-hex-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3b82f6" />
+                <stop offset="100%" stop-color="#10b981" />
+              </linearGradient>
+              <linearGradient id="logo-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#60a5fa" />
+                <stop offset="100%" stop-color="#34d399" />
+              </linearGradient>
+            </defs>
+            <!-- Hexagon Shield Frame -->
+            <polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="url(#logo-hex-grad)" fill-opacity="0.14" stroke="url(#logo-stroke)" stroke-width="2" stroke-linejoin="round" />
+            <!-- Letter D -->
+            <path d="M12 12V28M12 12H17.5C20.5 12 22 13.8 22 16.5C22 19.2 20.5 21 17.5 21H12" stroke="#60a5fa" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Letter N with Uptime Line -->
+            <path d="M22 28V19L29 28V12" stroke="#34d399" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- HA Pulse Indicator Dot -->
+            <circle cx="20" cy="2" r="2.2" fill="#10b981" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">DN<span class="logo-accent">//</span>SRE</span>
+          <span class="logo-sub">SYSTEMS</span>
+        </div>
       </a>
 
       <div class="nav-right">

@@ -138,7 +138,6 @@ For Google Sites:
 - **Layout:** Centered Text Box or Embed Block.
 - **Text:**
   - 📧 Email: [davidng7988@gmail.com](mailto:davidng7988@gmail.com)
-  - 📞 Phone: [+601137921123](tel:+601137921123)
   - 🐙 GitHub: [github.com/david894](https://github.com/david894)
   - 💼 LinkedIn: David Ng Kah Xian
   - 📍 Location: Sentul, Kuala Lumpur, Malaysia

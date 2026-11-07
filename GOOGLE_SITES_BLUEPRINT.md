@@ -118,13 +118,19 @@ You can build this as a **Single-Page Scrolling Portfolio** (recommended for rec
 ### Section 6: Education & Languages
 - **Layout:** 2-Column Content Block.
 - **Left Column: Education**
-  - **Degree:** Bachelor of Software Engineering
+  - **Degree:** Bachelor of Software Engineering (软件工程学士学位)
   - **Institution:** Tunku Abdul Rahman University of Management and Technology (TARUMT)
   - **Period:** 2021 – 2025
 - **Right Column: Languages**
-  - English (Fluent)
-  - Chinese / Mandarin (Fluent)
-  - Malay (Fluent)
+  - English (Fluent / 精通)
+  - Chinese / Mandarin (Fluent / 精通)
+  - Malay (Fluent / 精通)
+
+---
+
+### Section 7: Bilingual Support (English / 中文)
+For Google Sites:
+- You can create two top-level page groups: **EN** (English) and **中文** (Chinese), or use the interactive embed code provided in `index.html` which features an instantaneous one-click **[ EN | 中文 ]** switch and a **[ ☀️ / 🌙 ] Light/Dark mode** toggle!
 
 ---
 
